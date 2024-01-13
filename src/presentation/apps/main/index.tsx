@@ -1,5 +1,8 @@
+import { RouterProvider } from '@tanstack/react-router';
+import { router } from '@routes';
+
 export function MainApp() {
   return (
-    <div>Hellow world</div>   
+    <RouterProvider router={router}  />
   )
 } 
