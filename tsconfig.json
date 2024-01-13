@@ -25,7 +25,8 @@
       "@hooks": ["./src/presentation/hooks"],
       "@pages": ["./src/presentation/pages"],
       "@routes": ["./src/presentation/routes"],
-      "@apps": ["./src/presentation/apps"]
+      "@apps": ["./src/presentation/apps"],
+      "@layouts": ["./src/presentation/layouts"]
     }
   },
   "include": ["src"],
