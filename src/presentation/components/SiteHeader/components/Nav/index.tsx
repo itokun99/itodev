@@ -1,18 +1,25 @@
 import { Link } from "@tanstack/react-router";
 import React from "react";
 
-function Component() {
+interface NavItem {
+  url: string;
+  title: string;
+}
+
+interface NavProps {
+  items: NavItem[];
+}
+
+function Component({ items }: NavProps) {
   return (
     <ul className="flex items-center gap-4">
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
+      {items.map(({ url, title }, i) => (
+        <li key={i}>
+          <Link to={url} title={title}>
+            {title}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 }
