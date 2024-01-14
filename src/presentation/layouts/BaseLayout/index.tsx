@@ -1,16 +1,15 @@
-import { Link, Outlet } from "@tanstack/react-router";
+import { Outlet } from "@tanstack/react-router";
+import { Container, SiteHeader } from "@components";
 
 export function BaseLayout() {
   return (
     <>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+      <SiteHeader />
+      <div className="pt-16">
+        <Container>
+          <Outlet />
+        </Container>
       </div>
-      <Outlet />
     </>
-  )
+  );
 }
-
