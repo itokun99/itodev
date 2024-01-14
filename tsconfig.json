@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@component": ["./src/presentation/components"],
+      "@components": ["./src/presentation/components"],
       "@containers": ["./src/presentation/containers"],
       "@hooks": ["./src/presentation/hooks"],
       "@pages": ["./src/presentation/pages"],
